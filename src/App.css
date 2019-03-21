@@ -1,0 +1,55 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(300px, 30vw) minmax(600px, 1fr);
+  grid-template-rows: 1fr 300px;
+  grid-template-areas:
+    "select preview"
+    "select text";
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+.preview {
+  grid-area: preview;
+  text-align: center;
+}
+
+.preview img {
+  max-height: 80%;
+}
+
+.top-text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(50%);
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.bottom-text {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(50%);
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.user-texts {
+  grid-area: text;
+}
+
+.image-selector {
+  grid-area: select;
+  overflow-y: scroll;
+}
+
+.image-selector img {
+  width: 100%;
+}

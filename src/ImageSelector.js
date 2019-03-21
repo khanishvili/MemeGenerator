@@ -11,6 +11,6 @@ export default class ImageSelector extends Component {
         <img src={image} onClick={this.onImageClick} />
       </li>
     ));
-    return <ul>{imageList}</ul>;
+    return <ul className="image-selector">{imageList}</ul>;
   }
 }
