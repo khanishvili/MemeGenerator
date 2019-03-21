@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Preview from "./Preview";
 import UserTexts from "./UserTexts";
+import ImageSelector from "./ImageSelector";
 
 class App extends Component {
   constructor() {
@@ -9,7 +10,12 @@ class App extends Component {
     this.state = {
       previewImage: "./Images/Kid.jpg",
       topText: "Top TEXT",
-      bottomText: "Bottom TEXT"
+      bottomText: "Bottom TEXT",
+      images: [
+        "./Images/Kid.jpg",
+        "./Images/StarTrek.png",
+        "./Images/Taken.jpg"
+      ]
     };
   }
 
@@ -19,6 +25,10 @@ class App extends Component {
 
   setBottomText = text => {
     this.setState({ bottomText: text });
+  };
+
+  setImage = path => {
+    this.setState({ previewImage: path });
   };
 
   render() {
@@ -35,6 +45,7 @@ class App extends Component {
           bottom={this.state.bottomText}
           setBottom={this.setBottomText}
         />
+        <ImageSelector images={this.state.images} setImage={this.setImage} />
       </div>
     );
   }
