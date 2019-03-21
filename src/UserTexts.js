@@ -12,7 +12,7 @@ export default class UserTexts extends Component {
   render() {
     const { top, bottom } = this.props;
     return (
-      <div>
+      <div className="user-texts">
         <div>
           <label>Top Text:</label>
           <input type="text" value={top} onChange={this.topChange} />

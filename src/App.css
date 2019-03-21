@@ -1,0 +1,48 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(300px, 30vw) minmax(600px, 1fr);
+  grid-template-rows: 70vh 30vh;
+  grid-template-areas:
+    "select preview"
+    "select text";
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+.preview {
+  grid-area: preview;
+  text-align: center;
+}
+
+.preview img {
+  max-height: 80%;
+}
+
+.top-text {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.bottom-text {
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-top: 60vh;
+}
+
+.user-texts {
+  grid-area: text;
+}
+
+.image-selector {
+  grid-area: select;
+  overflow-y: scroll;
+}
+
+.image-selector img {
+  width: 100%;
+}
