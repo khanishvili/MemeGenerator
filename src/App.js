@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Preview from "./Preview";
+import UserTexts from "./UserTexts";
 
 class App extends Component {
   constructor() {
@@ -19,6 +20,7 @@ class App extends Component {
           top={this.state.topText}
           bottom={this.state.bottomText}
         />
+        <UserTexts top={this.state.topText} bottom={this.state.bottomText} />
       </div>
     );
   }
