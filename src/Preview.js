@@ -6,7 +6,11 @@ export default class Preview extends Component {
     return (
       <div>
         <h1>{top}</h1>
-        <img src={image} style={{ maxWidth: "70vw", maxHeight: "70vh" }} />
+        <img
+          src={image}
+          alt="Selected Meme Template"
+          style={{ maxWidth: "70vw", maxHeight: "70vh" }}
+        />
         <h1>{bottom}</h1>
       </div>
     );
