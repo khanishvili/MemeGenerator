@@ -13,7 +13,7 @@ class App extends Component {
       bottomText: "Yo git like me",
       images: [
         "./Images/Kid.jpg",
-        "./Images/StarTrek.jpg",
+        "./Images/StarTrek.png",
         "./Images/Taken.jpg",
         "./Images/0.jpg",
         "./Images/1.jpg",
