@@ -52,7 +52,7 @@ export default class UserTexts extends Component {
           <label>Bottom Text:</label>
           <input type="text" value={bottom} onChange={this.bottomChange} />
         </div>
-        <button onClick={makePic}>Create Picture</button>
+        <button onClick={makePic}>Create Meme</button>
         <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>

@@ -1,0 +1,8 @@
+.image-selector {
+  grid-area: select;
+  overflow-y: scroll;
+}
+
+.image-selector img {
+  width: 100%;
+}

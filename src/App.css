@@ -15,16 +15,3 @@
   grid-gap: 20px;
   height: 100vh;
 }
-
-.user-texts {
-  grid-area: text;
-}
-
-.image-selector {
-  grid-area: select;
-  overflow-y: scroll;
-}
-
-.image-selector img {
-  width: 100%;
-}
