@@ -15,25 +15,6 @@
   height: 100vh;
 }
 
-.preview {
-  grid-area: preview;
-  text-align: center;
-}
-
-.preview img {
-  max-height: 80%;
-}
-
-.top-text {
-  color: white;
-  text-shadow: 2px 2px black;
-}
-.bottom-text {
-  color: white;
-  text-shadow: 2px 2px black;
-  margin-top: 60vh;
-}
-
 .user-texts {
   grid-area: text;
 }

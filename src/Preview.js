@@ -6,6 +6,7 @@ export default class Preview extends Component {
     return (
       <div
         className="preview"
+        id="preview"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "contain",
