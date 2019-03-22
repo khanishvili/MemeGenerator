@@ -1,3 +1,7 @@
+.user-texts {
+  grid-area: text;
+}
+
 label {
   font-size: 35px;
   margin-right: 5px;
@@ -16,7 +20,7 @@ input {
 
 button {
   font-size: 30px;
-  background: grey;
+  background: rgb(10, 116, 202);
   padding: 10px 20px;
 }
 
@@ -32,7 +36,6 @@ button {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 50px auto;
@@ -42,7 +45,6 @@ button {
   text-align: center;
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
