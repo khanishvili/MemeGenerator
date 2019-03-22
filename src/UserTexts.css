@@ -1,18 +1,23 @@
-.preview {
-  grid-area: preview;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+label {
+  font-size: 35px;
+  margin-right: 5px;
 }
 
-.top-text {
-  color: white;
-  text-shadow: 2px 2px black;
+input {
+  font-size: 30px;
+  background-color: #e6e6ea;
+  border: none;
+  border-bottom: 2px solid black;
 }
-.bottom-text {
-  color: white;
-  text-shadow: 2px 2px black;
+
+.text-input {
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 30px;
+  background: grey;
+  padding: 10px 20px;
 }
 
 .modal {

@@ -1,0 +1,21 @@
+.preview {
+  grid-area: preview;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.top-text {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.bottom-text {
+  color: white;
+  text-shadow: 2px 2px black;
+}

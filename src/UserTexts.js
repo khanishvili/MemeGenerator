@@ -44,11 +44,11 @@ export default class UserTexts extends Component {
 
     return (
       <div className="user-texts">
-        <div>
+        <div className="text-input">
           <label>Top Text:</label>
           <input type="text" value={top} onChange={this.topChange} />
         </div>
-        <div>
+        <div className="text-input">
           <label>Bottom Text:</label>
           <input type="text" value={bottom} onChange={this.bottomChange} />
         </div>

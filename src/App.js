@@ -9,8 +9,8 @@ class App extends Component {
     super();
     this.state = {
       previewImage: "./Images/Kid.jpg",
-      topText: "Top TEXT",
-      bottomText: "Bottom TEXT",
+      topText: "TOP TEXT",
+      bottomText: "BOTTOM TEXT",
       images: [
         "./Images/Kid.jpg",
         "./Images/StarTrek.png",
