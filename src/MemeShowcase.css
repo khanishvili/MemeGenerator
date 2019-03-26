@@ -1,11 +1,16 @@
 .meme-showcase {
   grid-area: meme;
   overflow-y: scroll;
+  text-align: center;
 }
 
 .memes {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.memes h1 {
+  font-size: 28px;
 }

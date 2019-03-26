@@ -1,6 +1,7 @@
 .image-selector {
   grid-area: select;
   overflow-y: scroll;
+  text-align: center;
 }
 
 .image-selector img {
