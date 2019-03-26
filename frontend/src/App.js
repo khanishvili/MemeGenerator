@@ -50,7 +50,11 @@ class App extends Component {
       ]
     };
   }
-
+  componentDidMount() {
+    fetch("https://localhost:44337/api/memes")
+      .then(res => res.json())
+      .then(json => this.setState({ memes: json }));
+  }
   setTopText = text => {
     this.setState({ topText: text });
   };

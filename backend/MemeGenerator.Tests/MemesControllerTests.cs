@@ -14,7 +14,9 @@ namespace MemeGenerator.Tests
 
             var result = underTest.Get();
 
-            Assert.Equal(2, result.Value.Count());
+            Assert.Equal(3, result.Value.Count());
         }
+      
+
     }
 }
