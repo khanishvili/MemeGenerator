@@ -22,6 +22,7 @@ button {
   font-size: 30px;
   background: rgb(10, 116, 202);
   padding: 10px 20px;
+  margin-right: 20px;
 }
 
 .modal {

@@ -11,6 +11,16 @@ export default class UserTexts extends Component {
     this.props.setBottom(event.target.value);
   };
 
+  addToShowcase = () => {
+    const newMeme = {
+      id: "1",
+      top: this.props.top,
+      bottom: this.props.bottom,
+      image: this.props.image
+    };
+    this.props.addNew(newMeme);
+  };
+
   render() {
     const { top, bottom } = this.props;
     const makePic = () => {
@@ -52,7 +62,8 @@ export default class UserTexts extends Component {
           <label>Bottom Text:</label>
           <input type="text" value={bottom} onChange={this.bottomChange} />
         </div>
-        <button onClick={makePic}>Create Meme</button>
+        <button onClick={makePic}>Create Png</button>
+        <button onClick={this.addToShowcase}>Add to Showcase</button>
         <div id="myModal" className="modal">
           <div className="modal-content">
             <span className="close">&times;</span>

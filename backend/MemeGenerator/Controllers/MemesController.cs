@@ -54,5 +54,12 @@ namespace MemeGenerator.Controllers
         {
             return all;
         }
+
+        [HttpPost]
+        public ActionResult<bool> Post([FromBody] Meme newMeme)
+        {
+            all.Add(newMeme);
+            return true;
+        }
     }
 }

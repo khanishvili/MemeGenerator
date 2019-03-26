@@ -30,8 +30,8 @@ export default class MemeShowcase extends Component {
 
     return (
       <ul className="meme-showcase">
-        <h1>Meme Showcase</h1>
         {memeList}
+        <h1>Meme Showcase</h1>
       </ul>
     );
   }
