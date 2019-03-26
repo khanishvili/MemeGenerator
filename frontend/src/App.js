@@ -50,11 +50,32 @@ class App extends Component {
       ]
     };
   }
+
   componentDidMount() {
     fetch("https://localhost:44337/api/memes")
       .then(res => res.json())
       .then(json => this.setState({ memes: json }));
   }
+
+  addNew = userMeme => {
+    fetch("https://localhost:44337/api/memes", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify(userMeme)
+    })
+      .then(res => {
+        if (res.ok) {
+          const newMemes = [...this.state.memes, userMeme];
+          this.setState({ memes: newMemes });
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
   setTopText = text => {
     this.setState({ topText: text });
   };
@@ -80,6 +101,8 @@ class App extends Component {
           setTop={this.setTopText}
           bottom={this.state.bottomText}
           setBottom={this.setBottomText}
+          image={this.state.previewImage}
+          addNew={this.addNew}
         />
         <ImageSelector images={this.state.images} setImage={this.setImage} />
         <MemeShowcase
