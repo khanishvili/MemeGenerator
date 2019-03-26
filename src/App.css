@@ -7,11 +7,14 @@
 
 .app {
   display: grid;
-  grid-template-columns: minmax(300px, 30vw) minmax(600px, 1fr);
+  grid-template-columns: minmax(300px, 30vw) minmax(600px, 1fr) minmax(
+      300px,
+      30vw
+    );
   grid-template-rows: 70vh 30vh;
   grid-template-areas:
-    "select preview"
-    "select text";
+    "select preview meme"
+    "select text meme";
   grid-gap: 20px;
   height: 100vh;
 }

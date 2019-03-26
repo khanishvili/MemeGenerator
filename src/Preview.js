@@ -10,7 +10,7 @@ export default class Preview extends Component {
         id="preview"
         style={{
           backgroundImage: `url(${image})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center"
         }}

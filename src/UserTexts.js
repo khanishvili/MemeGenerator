@@ -29,7 +29,7 @@ export default class UserTexts extends Component {
             modalContent.removeChild(modalContent.childNodes[1]);
           };
           window.onclick = function(event) {
-            if (event.target == modal) {
+            if (event.target === modal) {
               modal.style.display = "none"; // Get the <ul> element with id="myList"
               modalContent.removeChild(modalContent.childNodes[1]);
             }
@@ -53,9 +53,9 @@ export default class UserTexts extends Component {
           <input type="text" value={bottom} onChange={this.bottomChange} />
         </div>
         <button onClick={makePic}>Create Meme</button>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
+        <div id="myModal" className="modal">
+          <div className="modal-content">
+            <span className="close">&times;</span>
           </div>
         </div>
       </div>

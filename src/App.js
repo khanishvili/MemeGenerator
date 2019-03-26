@@ -3,6 +3,7 @@ import "./App.css";
 import Preview from "./Preview";
 import UserTexts from "./UserTexts";
 import ImageSelector from "./ImageSelector";
+import MemeShowcase from "./MemeShowcase";
 
 class App extends Component {
   constructor() {
@@ -32,6 +33,20 @@ class App extends Component {
         "./Images/14.jpg",
         "./Images/15.jpg",
         "./Images/16.jpg"
+      ],
+      memes: [
+        {
+          id: "1",
+          top: "this is the top",
+          bottom: "this is the bottom",
+          image: "./Images/0.jpg"
+        },
+        {
+          id: "2",
+          top: "this is the top",
+          bottom: "this is the bottom",
+          image: "./Images/1.jpg"
+        }
       ]
     };
   }
@@ -63,6 +78,12 @@ class App extends Component {
           setBottom={this.setBottomText}
         />
         <ImageSelector images={this.state.images} setImage={this.setImage} />
+        <MemeShowcase
+          memes={this.state.memes}
+          setImage={this.setImage}
+          setTop={this.setTopText}
+          setBottom={this.setBottomText}
+        />
       </div>
     );
   }
