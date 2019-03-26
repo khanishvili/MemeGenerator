@@ -14,6 +14,11 @@ export default class ImageSelector extends Component {
       </li>
     ));
 
-    return <ul className="image-selector">{imageList}</ul>;
+    return (
+      <ul className="image-selector">
+        <h1>Image Selector</h1>
+        {imageList}
+      </ul>
+    );
   }
 }
