@@ -11,10 +11,22 @@
       300px,
       30vw
     );
-  grid-template-rows: 70vh 30vh;
+  grid-template-rows: 10vh 60vh 30vh;
   grid-template-areas:
+    "titleSel preview titleMeme"
     "select preview meme"
     "select text meme";
-  grid-gap: 20px;
   height: 100vh;
+}
+
+.image-selector-title {
+  grid-area: titleSel;
+  text-align: center;
+  background-color: #333;
+}
+
+.meme-showcase-title {
+  grid-area: titleMeme;
+  text-align: center;
+  background-color: #333;
 }

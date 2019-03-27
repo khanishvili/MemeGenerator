@@ -91,6 +91,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <h1 className="image-selector-title">Image Selector</h1>
+        <h1 className="meme-showcase-title">Meme Showcase</h1>
         <Preview
           image={this.state.previewImage}
           top={this.state.topText}

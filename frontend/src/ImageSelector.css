@@ -2,6 +2,7 @@
   grid-area: select;
   overflow-y: scroll;
   text-align: center;
+  background-color: #333;
 }
 
 .image-selector img {
