@@ -19,5 +19,12 @@ namespace MemeGenerator.Repositories
         {
             return db.Memes.ToList();
         }
+
+        public void Add(Meme meme)
+        {
+            meme.Id = 0;
+            db.Memes.Add(meme);
+            db.SaveChanges();
+        }
     }
 }

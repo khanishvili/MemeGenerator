@@ -13,7 +13,6 @@ export default class UserTexts extends Component {
 
   addToShowcase = () => {
     const newMeme = {
-      id: "1",
       top: this.props.top,
       bottom: this.props.bottom,
       image: this.props.image
