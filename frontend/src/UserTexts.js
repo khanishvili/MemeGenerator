@@ -56,13 +56,13 @@ export default class UserTexts extends Component {
         <div className="text-input">
           <label>Top Text:</label>
           <input type="text" value={top} onChange={this.topChange} />
+          <button onClick={this.addToShowcase}>Add to Showcase</button>
         </div>
         <div className="text-input">
           <label>Bottom Text:</label>
           <input type="text" value={bottom} onChange={this.bottomChange} />
+          <button onClick={makePic}>Create Png</button>
         </div>
-        <button onClick={makePic}>Create Png</button>
-        <button onClick={this.addToShowcase}>Add to Showcase</button>
         <div id="myModal" className="modal">
           <div className="modal-content">
             <span className="close">&times;</span>

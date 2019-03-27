@@ -2,6 +2,7 @@
   grid-area: meme;
   overflow-y: scroll;
   text-align: center;
+  background-color: #333;
 }
 
 .memes {
