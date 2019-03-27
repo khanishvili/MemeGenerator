@@ -37,15 +37,9 @@ class App extends Component {
       memes: [
         {
           id: "1",
-          top: "this is the top",
-          bottom: "this is the bottom",
-          image: "./Images/0.jpg"
-        },
-        {
-          id: "2",
-          top: "this is the top",
-          bottom: "this is the bottom",
-          image: "./Images/1.jpg"
+          top: "WHY THE FUNCTION",
+          bottom: "does it take so long to load!?",
+          image: "./Images/StarTrek.png"
         }
       ]
     };

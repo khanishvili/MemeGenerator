@@ -15,6 +15,7 @@ namespace MemeGenerator.Tests
     {
         IMemeRepository repo;
         MemesController underTest;
+
         public MemesControllerTests()
         {
             repo = Substitute.For<IMemeRepository>();
@@ -26,15 +27,15 @@ namespace MemeGenerator.Tests
         {
             var expectedmodel = new List<Meme>() { new Meme() };
             repo.GetAll().Returns(expectedmodel);
+
             var result = underTest.Get();
 
             Assert.Equal(1, result.Value.Count());
         }
+
         [Fact]
         public void Post_Saves_A_Meme()
         {
-              
-
             var result = underTest.Post(new Meme()
             {
                 Id = 2,
@@ -42,6 +43,7 @@ namespace MemeGenerator.Tests
                 Bottom = "\"Cross-Origin Request Blocked\"",
                 Image = "./Images/Taken.jpg"
             });
+
             Assert.True(result.Value);
         }
     }
