@@ -48,7 +48,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://localhost:44337/api/memes")
       .then(res => res.json())
-      .then(json => this.setState({ memes: json }));
+      .then(json => this.setState({ memes: json.reverse() }));
   }
 
   addNew = userMeme => {
@@ -61,7 +61,7 @@ class App extends Component {
     })
       .then(res => {
         if (res.ok) {
-          const newMemes = [...this.state.memes, userMeme];
+          const newMemes = [userMeme, ...this.state.memes];
           this.setState({ memes: newMemes });
         }
       })
