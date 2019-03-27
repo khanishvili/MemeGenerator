@@ -50,8 +50,8 @@ namespace MemeGenerator.Controllers
 
         };
 
-        MemeRepository repo;
-        public MemesController(MemeRepository repo)
+        IMemeRepository repo;
+        public MemesController(IMemeRepository repo)
         {
             this.repo = repo;
         }
