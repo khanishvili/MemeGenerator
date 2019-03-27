@@ -1,6 +1,6 @@
 .user-texts {
   grid-area: text;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 label {
@@ -13,18 +13,21 @@ input {
   background-color: #e6e6ea;
   border: none;
   border-bottom: 2px solid black;
-  width: 230px;
-  margin-right: 10px;
+  width: 100%;
 }
 
 .text-input {
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
 }
 
 button {
   font-size: 30px;
   background: rgb(10, 116, 202);
   padding: 10px 20px;
+  margin-left: 20px;
 }
 
 .modal {
