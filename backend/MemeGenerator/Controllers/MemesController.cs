@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MemeGenerator.Models;
+using MemeGenerator.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace MemeGenerator.Controllers
@@ -49,10 +50,17 @@ namespace MemeGenerator.Controllers
 
         };
 
-        [HttpGet]
-        public ActionResult<List<Meme>> Get()
+        MemeRepository repo;
+        public MemesController(MemeRepository repo)
         {
-            return all;
+            this.repo = repo;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Meme>> Get()
+        {
+            var memeList = repo.GetAll().ToArray();
+            return memeList;
         }
 
         [HttpPost]
