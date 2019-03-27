@@ -25,7 +25,6 @@ namespace MemeGenerator
         {
             modelBuilder.Entity<Meme>().HasData
                 (
-
                     new Meme()
                     {
                         Id = 1,
@@ -41,7 +40,13 @@ namespace MemeGenerator
                         Bottom = "\"Cross-Origin Request Blocked\"",
                         Image = "./Images/Taken.jpg"
                     },
-                    new Meme() { Id = 3, Top = "International Man", Bottom = "of MVC", Image = "./Images/9.jpg" },
+                    new Meme()
+                    {
+                        Id = 3,
+                        Top = "International Man",
+                        Bottom = "of MVC",
+                        Image = "./Images/9.jpg"
+                    },
                     new Meme()
                     {
                         Id = 4,
@@ -66,8 +71,6 @@ namespace MemeGenerator
                 );
 
             base.OnModelCreating(modelBuilder);
-
-
         }
     }
 }

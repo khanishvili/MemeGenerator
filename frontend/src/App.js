@@ -37,15 +37,9 @@ class App extends Component {
       memes: [
         {
           id: "1",
-          top: "this is the top",
-          bottom: "this is the bottom",
-          image: "./Images/0.jpg"
-        },
-        {
-          id: "2",
-          top: "this is the top",
-          bottom: "this is the bottom",
-          image: "./Images/1.jpg"
+          top: "WHY THE FUNCTION",
+          bottom: "does it take so long to load!?",
+          image: "./Images/StarTrek.png"
         }
       ]
     };
@@ -54,7 +48,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://localhost:44337/api/memes")
       .then(res => res.json())
-      .then(json => this.setState({ memes: json }));
+      .then(json => this.setState({ memes: json.reverse() }));
   }
 
   addNew = userMeme => {
@@ -67,7 +61,7 @@ class App extends Component {
     })
       .then(res => {
         if (res.ok) {
-          const newMemes = [...this.state.memes, userMeme];
+          const newMemes = [userMeme, ...this.state.memes];
           this.setState({ memes: newMemes });
         }
       })
