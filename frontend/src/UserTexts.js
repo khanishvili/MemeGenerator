@@ -35,12 +35,16 @@ export default class UserTexts extends Component {
           var span = document.querySelector(".close");
           span.onclick = function() {
             modal.style.display = "none";
-            modalContent.removeChild(modalContent.childNodes[1]);
+            while (modalContent.childNodes.length > 1) {
+              modalContent.removeChild(modalContent.lastChild);
+            }
           };
           window.onclick = function(event) {
             if (event.target === modal) {
-              modal.style.display = "none"; // Get the <ul> element with id="myList"
-              modalContent.removeChild(modalContent.childNodes[1]);
+              modal.style.display = "none";
+              while (modalContent.childNodes.length > 1) {
+                modalContent.removeChild(modalContent.lastChild);
+              }
             }
           };
 
